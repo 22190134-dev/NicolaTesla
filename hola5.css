@@ -1,0 +1,206 @@
+/* ===========================
+   VARIABLES
+=========================== */
+:root {
+  --ancho-contenedor: 900px;
+}
+
+/* ===========================
+   RESETEO Y BASE
+=========================== */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  color: #0b2b16;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+/* ===========================
+   FONDO FIJO
+=========================== */
+#fondo {
+  background-image: url('fondo1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+}
+
+/* ===========================
+   MENÚ SUPERIOR
+=========================== */
+#menu {
+  background-color: #D2B48C; /* Café claro */
+  padding: 12px;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+#menu .boton {
+  background-color: #ffffffd5;
+  color: #333;
+  padding: 10px 20px;
+  border-radius: 20px;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+  display: inline-block;
+  transition: 0.3s;
+  border: 1px solid #bfa98a;
+}
+
+#menu .boton:hover {
+  background-color: #f4a261;
+  color: white;
+}
+
+/* ===========================
+   CONTENEDOR PRINCIPAL
+=========================== */
+.contenedor {
+  width: 100%;
+  max-width: var(--ancho-contenedor);
+  margin-top: 100px; /* Para que no se oculte debajo del menú */
+}
+
+/* ===========================
+   ENCABEZADO
+=========================== */
+header {
+  text-align: center;
+  margin-bottom: 22px;
+}
+
+h1 {
+  margin: 0 0 14px 0;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 3.5rem;
+  color: #ffffff;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+
+#imagen-tesla {
+  display: block;
+  margin: 0 auto;
+  max-width: 360px;
+  width: 100%;
+  border-radius: 6px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+}
+
+/* ===========================
+   BOTONES SECUNDARIOS
+=========================== */
+#botones {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.boton {
+  background: rgba(255, 255, 255, 0.6);
+  border: 2px solid rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+  color: #0b2b16;
+  font-size: 1rem;
+  padding: 10px 20px;
+  margin: 0 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
+  text-decoration: none;
+  font-family: 'Inter', Arial, sans-serif;
+}
+
+.boton:hover {
+  background: rgba(255, 255, 255, 0.8);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* ===========================
+   CUADRO DE TEXTO
+=========================== */
+#cuadro-texto {
+  background: rgba(255, 255, 255, 0.65);
+  border-radius: 10px;
+  padding: 24px;
+  margin-top: 20px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+}
+
+#cuadro-texto p {
+  text-align: justify;
+  line-height: 1.65;
+  font-size: 1.05rem;
+  color: #0b2b16;
+  margin: 0 0 1rem 0;
+}
+
+#meta {
+  font-size: 0.9rem;
+  color: rgba(11,43,22,0.8);
+  margin-bottom: 12px;
+}
+
+/* ===========================
+   FORMULARIO FLOTANTE
+=========================== */
+.form-register {
+  background: #ffffffcc;
+  padding: 20px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 400px;
+  margin: 20px auto;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.25);
+}
+
+.controls {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border-radius: 5px;
+  border: 1px solid #aaa;
+}
+
+.botons {
+  padding: 10px 15px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.botons:hover {
+  background-color: #45a049;
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+@media (max-width: 600px) {
+  h1 { font-size: 2.4rem; }
+  #imagen-tesla { max-width: 260px; }
+  #cuadro-texto { padding: 16px; }
+}
+

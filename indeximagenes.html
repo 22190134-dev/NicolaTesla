@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca de Imágenes</title>
+
+    <!-- Mismo estilo de botones que tu página principal -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        /* BOTONES iguales a los tuyos */
+        .boton {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 15px;
+            background-color: #3a3a3a;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        .boton:hover {
+            background-color: #1f1f1f;
+        }
+
+        /* Contenedor de imágenes */
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+        .image-box {
+            margin: 10px;
+            border: 2px solid #ccc;
+            border-radius: 8px;
+        }
+        .image-box img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Botón regresar -->
+    <a href="indexinicio.html" class="boton">Regresar al Inicio</a>
+
+    <h1>Biblioteca de Imágenes</h1>
+
+    <div class="container">
+        <div class="image-box"><img src="imagen 1.jpg" alt="Imagen 1"></div>
+        <div class="image-box"><img src="imagen 2.jpg" alt="Imagen 2"></div>
+        <div class="image-box"><img src="imagen 3.jpg" alt="Imagen 3"></div>
+        <div class="image-box"><img src="imagen 4.jpg" alt="Imagen 4"></div>
+        <div class="image-box"><img src="imagen 5.jpg" alt="Imagen 5"></div>
+        <div class="image-box"><img src="imagen 6.jpg" alt="Imagen 6"></div>
+        <div class="image-box"><img src="imagen 7.jpg" alt="Imagen 7"></div>
+        <div class="image-box"><img src="imagen 8.jpg" alt="Imagen 8"></div>
+        <div class="image-box"><img src="imagen 9.jpg" alt="Imagen 9"></div>
+        <div class="image-box"><img src="imagen 10.jpg" alt="Imagen 10"></div>
+    </div>
+
+</body>
+</html>

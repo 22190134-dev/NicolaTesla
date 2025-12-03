@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Biografía - Nikola Tesla</title>
+  <link rel="stylesheet" href="hola5.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  
+  <!-- Menú superior -->
+  <nav id="menu">
+    <a href="indexinicio.html" class="boton" id="registro-btn">Registro</a>
+    <a href="indeximagenes.html" class="boton">Imágenes del Semestre</a>
+  </nav>
+
+  <div id="fondo"></div>
+  
+  <div class="contenedor">
+    <header>
+      <h1>Nikola Tesla</h1>
+      <img id="imagen-tesla" src="Tesla.jpg" alt="Retrato de Nikola Tesla">
+      <div id="botones">
+        <a href="indexaportes.html" class="boton">Aportes</a>
+        <a href="index.html" class="boton">Su vida</a>
+      </div>
+    </header>
+
+    <article id="cuadro-texto" aria-labelledby="titulo-tesla">
+      <div id="meta">(1856–1943) — Inventor, ingeniero eléctrico y físico</div>
+      <p>
+        Nikola Tesla nació el 10 de julio de 1856 en Smiljan, entonces parte del Imperio austríaco (hoy Croacia). Fue un pionero en el campo de la electricidad y el electromagnetismo; sus trabajos sobre corriente alterna (CA), motores polifásicos y transmisión inalámbrica de energía sentaron las bases de la electrificación moderna.
+      </p>
+      <p>
+        A lo largo de su carrera trabajó en Europa y Estados Unidos, desarrollando prototipos y patentes que influyeron profundamente en la industria eléctrica. Sus enfrentamientos empresariales con contemporáneos como Thomas Edison y sus prometedoras —y en ocasiones inacabadas— ideas sobre transmisión inalámbrica y fenómenos de alta frecuencia contribuyeron a forjar una figura tanto admirada como enigmática.
+      </p>
+      <p>
+        Tesla también exploró la radio, la iluminación por fluorescencia y tecnologías que parecían adelantadas a su tiempo. Murió el 7 de enero de 1943 en Nueva York, dejando un legado de innovación que sigue inspirando a científicos, ingenieros y entusiastas de la tecnología.
+      </p>
+    </article>
+  </div>
+
+  <!-- Sección para el formulario de registro (inicialmente oculta) -->
+  <section id="registro-formulario" class="form-register" style="display: none;">
+    <h4>Formulario Registro</h4>
+    <input class="controls" type="text" name="nombres" id="nombres" placeholder="Ingrese su Nombre">
+    <input class="controls" type="text" name="apellidos" id="apellidos" placeholder="Ingrese su Apellido">
+    <input class="controls" type="password" name="correo" id="correo" placeholder="Ingrese su Contraseña">
+    <input class="botons" type="submit" value="Registrar">
+    <button onclick="toggleFormulario()" class="botons">Cerrar</button>
+  </section>
+
+  <script>
+    // Mostrar u ocultar el formulario de registro
+    function toggleFormulario() {
+      const formulario = document.getElementById('registro-formulario');
+      formulario.style.display = formulario.style.display === "none" ? "block" : "none";
+    }
+
+    // Abrir formulario al presionar "Registro"
+    document.getElementById('registro-btn').addEventListener('click', function (event) {
+      event.preventDefault();
+      toggleFormulario();
+    });
+  </script>
+</body>
+</html>
+
